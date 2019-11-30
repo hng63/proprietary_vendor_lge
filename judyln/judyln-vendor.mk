@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/camera/camera_tune_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_tune_config.xml \
+    vendor/lge/judyln/proprietary/vendor/etc/camera/wb_graph_imx351.pb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/wb_graph_imx351.pb \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc \
@@ -323,7 +324,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libfilm_emulation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilm_emulation.so \
     vendor/lge/judyln/proprietary/vendor/lib/libfilm_emulation_symphony.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilm_emulation_symphony.so \
     vendor/lge/judyln/proprietary/vendor/lib/libfpfactory-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpfactory-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_algo.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ca.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
     vendor/lge/judyln/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
     vendor/lge/judyln/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
@@ -431,6 +434,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/libsysmondomain_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsysmondomain_skel.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/lowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/lowi_client.so \
     vendor/lge/judyln/proprietary/vendor/lib/rfsa/adsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/mmecns_module.so.1 \
+    vendor/lge/judyln/proprietary/vendor/lib/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.hal.tof.so \
     vendor/lge/judyln/proprietary/vendor/lib/sensors.sar.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.sar.so \
     vendor/lge/judyln/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.lge.hardware.lgatcmd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.lgatcmd@1.0.so \
@@ -456,7 +460,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory-impl.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_algo.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_ca.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \

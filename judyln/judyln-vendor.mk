@@ -85,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/etc/acdbdata/v1/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/v1/Speaker_cal.acdb \
     vendor/lge/judyln/proprietary/vendor/etc/camera/camera_tune_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_tune_config.xml \
     vendor/lge/judyln/proprietary/vendor/etc/camera/vnr/SJ_VideoNR_LUT.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vnr/SJ_VideoNR_LUT.bin \
-    vendor/lge/judyln/proprietary/vendor/etc/camera/wb_graph_imx351.pb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/wb_graph_imx351.pb \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/lge/judyln/proprietary/vendor/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.biometrics.fingerprint@2.1-service.rc \

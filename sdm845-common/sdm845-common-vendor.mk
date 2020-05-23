@@ -832,7 +832,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/sdm845-common/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
     vendor/lge/sdm845-common/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
     vendor/lge/sdm845-common/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
-    vendor/lge/sdm845-common/proprietary/vendor/init.lge.svelte.rc:$(TARGET_COPY_OUT_VENDOR)/init.lge.svelte.rc
+    vendor/lge/sdm845-common/proprietary/vendor/init.lge.svelte.rc:$(TARGET_COPY_OUT_VENDOR)/init.lge.svelte.rc \
+    vendor/lge/sdm845-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
+    vendor/lge/sdm845-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
+    vendor/lge/sdm845-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml
 
 PRODUCT_PACKAGES += \
     libaudioparsers \

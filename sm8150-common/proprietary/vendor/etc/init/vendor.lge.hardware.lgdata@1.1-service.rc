@@ -1,4 +1,0 @@
-service vendor.lge-lgdata-hal-1-1 /vendor/bin/hw/vendor.lge.hardware.lgdata@1.1-service
-    class hal
-    user system
-    group system net_raw radio

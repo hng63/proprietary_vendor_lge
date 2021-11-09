@@ -263,6 +263,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/camera/titan17x_usecases.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/titan17x_usecases.bin \
     vendor/lge/judyln/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/lge/judyln/proprietary/vendor/lib/hw/audio.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sdm845.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/camera.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm845.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qti.chi.override.so \
     vendor/lge/judyln/proprietary/vendor/lib/hw/fingerprint.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.sdm845.so \
@@ -270,7 +271,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib/lib.com.lge.elvis.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib.com.lge.elvis.so \
     vendor/lge/judyln/proprietary/vendor/lib/libAutoContrast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAutoContrast.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib/libLgeVendorFeatures2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libLgeVendorFeatures2.so \
     vendor/lge/judyln/proprietary/vendor/lib/libSJVideoNR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSJVideoNR.so \
     vendor/lge/judyln/proprietary/vendor/lib/lib_wdr2.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_wdr2.so \
@@ -294,9 +294,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_algo.so \
     vendor/lge/judyln/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     vendor/lge/judyln/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
     vendor/lge/judyln/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
     vendor/lge/judyln/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
     vendor/lge/judyln/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
@@ -307,7 +306,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/liblgehdcpek.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgehdcpek.so \
     vendor/lge/judyln/proprietary/vendor/lib/liblgftmitem_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgftmitem_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib/liblghdri.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblghdri.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/lge/judyln/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
     vendor/lge/judyln/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
     vendor/lge/judyln/proprietary/vendor/lib/libmorpho_image_stab31.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmorpho_image_stab31.so \
@@ -318,8 +316,19 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
     vendor/lge/judyln/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
     vendor/lge/judyln/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceLandmarks.so \
     vendor/lge/judyln/proprietary/vendor/lib/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceRecognition.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
+    vendor/lge/judyln/proprietary/vendor/lib/libscveScan3D.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveScan3D.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsensor_lge_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_lge_cal.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
@@ -331,7 +340,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
     vendor/lge/judyln/proprietary/vendor/lib/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspcom.so \
     vendor/lge/judyln/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
-    vendor/lge/judyln/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib/libunified_sysfs_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunified_sysfs_vendor.so \
@@ -395,6 +403,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.lge.hardware.filehandle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.filehandle@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
     vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
@@ -410,24 +420,22 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/hw/audio.primary.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sdm845.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/fingerprint.sdm845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.sdm845.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libLgeVendorFeatures2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLgeVendorFeatures2.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory-impl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libfpfactory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpfactory.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_algo.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_hal.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdmiedid.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/lge/judyln/proprietary/vendor/lib64/liblgefido_hal_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgefido_hal_impl.so \
     vendor/lge/judyln/proprietary/vendor/lib64/liblgftmitem_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblgftmitem_vendor.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/lge/judyln/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
@@ -435,12 +443,22 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/lge/judyln/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceLandmarks.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceRecognition.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/libscveScan3D.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveScan3D.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsensor_lge_cal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_lge_cal.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
@@ -448,11 +466,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyln/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libspcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspcom.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
-    vendor/lge/judyln/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower-1.1.4.so \
     vendor/lge/judyln/proprietary/vendor/lib64/libunified_sysfs_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunified_sysfs_vendor.so \
     vendor/lge/judyln/proprietary/vendor/lib64/sensors.sar.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sar.so \
     vendor/lge/judyln/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
     vendor/lge/judyln/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so

@@ -13,6 +13,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judyp/proprietary/vendor/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.biometrics.fingerprint@2.1.so \
     vendor/lge/judyp/proprietary/product/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qseecom@1.0.so \
     vendor/lge/judyp/proprietary/product/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/lge/judyp/proprietary/system/lib/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/lge/judyp/proprietary/system/lib64/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/lge/judyp/proprietary/vendor/bin/chre:$(TARGET_COPY_OUT_VENDOR)/bin/chre \
     vendor/lge/judyp/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/lge/judyp/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \

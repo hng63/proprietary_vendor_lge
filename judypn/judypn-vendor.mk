@@ -41,6 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/judypn/proprietary/vendor/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx8399_video_mode_dsi_truly_panel.xml \
     vendor/lge/judypn/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
     vendor/lge/judypn/proprietary/vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/lge/judypn/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/lge/judypn/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/lge/judypn/proprietary/vendor/etc/sensors/registry/config/ak991x_dri_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/ak991x_dri_0.json \
     vendor/lge/judypn/proprietary/vendor/etc/sensors/registry/config/apds9160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/registry/config/apds9160_0.json \
